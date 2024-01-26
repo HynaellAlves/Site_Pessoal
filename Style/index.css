@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(./Archives/index_background.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.page {
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80%;
+  background-image: url(./Archives/Primary_Banner.gif);
+  background-size: cover;
+  background-color: black;
+  margin-bottom: 5%;
+}
+
+.bloom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.banner_nav {
+  position: relative;
+  width: 100%;
+  height: 12%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.banner_link_nav {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.9rem;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.information_content {
+  position: relative;
+  width: 100%;
+  height: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.informations {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 60%;
+  height: 70%;
+}
+
+.profile_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  border: solid white 1px;
+  border-radius: 50%;
+}
+
+.profile_image .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile_data {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  line-height: 1.6;
+}
+
+.name {
+  color: white;
+  font-size: 6rem;
+  font-family: "Pixelify Sans", sans-serif;
+  animation: textBlur 20s linear infinite;
+}
+
+.cargo {
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 0 0 0.5rem white;
+}
+
+.localidade {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 0 0 0.5rem white;
+}
+
+.contents {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  border: solid 1px black;
+}
+
+.content_introduction {
+  align-items: center;
+  flex-direction: column;
+}
+
+.title_introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+.text_introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 95%;
+  height: 80%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.title_introduction p {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: "Rubik", sans-serif;
+}
+
+.saudacao {
+  font-size: 4.5rem;
+  font-weight: bolder;
+}
+
+.text {
+  font-size: 2.6rem;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+span {
+  font-weight: bolder;
+}
+
+.content_FA_OP {
+  flex-wrap: nowrap;
+}
+
+.FA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.OP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  height: 75%;
+  padding: 5% 1.3%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.icon {
+  width: 20%;
+  height: 15%;
+  border: solid 1px black;
+}
+
+.title_FA_OP {
+  color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.text_FA_OP {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+
+
+@keyframes textBlur {
+  0% {
+    text-shadow: 0 0 15px #7000FF;
+  }
+
+  25% {
+    text-shadow: 0 0 15px #b907b9;
+  }
+
+  50% {
+    text-shadow: 0 0 15px #00a2ff;
+  }
+
+  75% {
+    text-shadow: 0 0 15px #ff0062;
+  }
+
+  100% {
+    text-shadow: 0 0 15px #7000FF;
+  }
+
+}
