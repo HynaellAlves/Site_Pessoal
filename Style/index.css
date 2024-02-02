@@ -18,7 +18,7 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  background: url(./Archives/index_background.png);
+  background: url('./Archives/backgrounds/index_background.png');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,10 +26,100 @@ body {
 
 
 .page {
+  position: relative;
   overflow-x: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  position: absolute;
+  padding: 1% 1%;
+  width: 19%;
+  height: 80%;
+  right: 0;
+  z-index: 1;
+}
+
+.btn_contacts_menu {
+  width: 18%;
+  height: 8%;
+  transition: 0.5s;
+  box-shadow: 0 0 15px #9f39f3;
+  border: none;
+  border-radius: 50%;
+  background: url('./Archives/elements_small/profile_menu_contacts.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.btn_contacts_menu:hover {
+  box-shadow: 0 0 30px #ffff;
+}
+
+.contacts_menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+  background-color: #140329;
+}
+
+.contacts_title {
+  color: white;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+}
+
+.contacts_links {
+  color: #c25bfd;
+  font-size: 1rem;
+  margin: 3.4% 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contacts_label {
+  color: white;
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+
+}
+
+.social_medias {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+
+}
+
+.icons_socialMedias {
+  width: 14%;
+  height: 66%;
+}
+
+.icons_socialMedias img {
   width: 100%;
   height: 100%;
 }
@@ -40,10 +130,11 @@ body {
   flex-wrap: wrap;
   width: 100%;
   height: 80%;
-  background-image: url(./Archives/Primary_Banner.gif);
+  background-image: url('./Archives/backgrounds/Primary_Banner.gif');
   background-size: cover;
   background-color: black;
   margin-bottom: 5%;
+  border-radius: 0 0 20px 20px;
 }
 
 .bloom {
@@ -51,8 +142,9 @@ body {
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: 0;
+  border-radius: 0 0 20px 20px;
 }
 
 .banner_nav {
@@ -71,16 +163,14 @@ body {
 }
 
 .link {
+  transition: 0.2s linear;
   text-decoration: none;
   color: white;
   font-weight: bolder;
-  border-bottom: solid white;
 }
 
-.link:hover{
-  transition: 0.2s linear;
+.link:hover {
   text-shadow: -5px -10px 4px #9f39f3;
-  border-bottom: solid #9f39f3;
 }
 
 .information_content {
@@ -101,15 +191,19 @@ body {
 
 .profile_image {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40%;
   height: 100%;
-  border: solid white 1px;
+  border-radius: 50%;
+  box-shadow: 0 0 100px #ffffff59;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
-.profile_image .image {
+.image img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -129,7 +223,7 @@ body {
   color: white;
   font-size: 6rem;
   font-family: "Pixelify Sans", sans-serif;
-  animation: textBlur 20s linear infinite;
+  animation: textBlur 6s linear infinite;
 }
 
 .cargo {
@@ -150,6 +244,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
+  margin: 3% 0;
 }
 
 .content_introduction {
@@ -303,6 +398,7 @@ span {
   flex-wrap: nowrap;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 .text_carrossel {
@@ -311,7 +407,7 @@ span {
   width: 30%;
   padding: 0 2%;
   background-color: black;
-  border-right: 20px solid #9f39f3;
+  border-right: 20px solid #fff;
 }
 
 .text_carrossel p {
@@ -345,17 +441,94 @@ span {
 }
 
 #next {
-  background: url(./Archives/next_button.png);
+  background: url('./Archives/elements_small/next_button.png');
   background-size: contain;
 }
 
 #back {
-  background: url(./Archives/back_button.png);
+  background: url('./Archives/elements_small/back_button.png');
   background-size: contain;
 }
 
 .carrossel_change_0 {
   animation: carrossel_change 1.5s linear;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  background-color: #111111;
+}
+
+.associations {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 70%;
+  padding: 0 2%;
+  background-color: #0e0e0e;
+}
+
+.associations_links{
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 100%;
+  padding: 2% 0;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+
+}
+
+.associations_links ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.associations_links ul a {
+  color: #9f39f3;
+  margin: 1% 0;
+  text-decoration: none;
+}
+
+.associations_links ul a:hover{
+  color: white;
+}
+
+footer p {
+  font-size: 1.1rem;
+  padding: 0 2%;
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+}
+
+.icons_teste {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: end;
+  align-items: center;
+  width: 30%;
+  height: 30%;
+  padding: 0 2%;
+}
+
+.footer_svg {
+  width: 7%;
+  height: 30%;
+  margin: 0 3%;
+}
+
+.footer_svg img {
+  width: 100%;
+  height: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -364,11 +537,6 @@ span {
 
 ::-webkit-scrollbar-thumb {
   background-color: #9f39f3;
-}
-
-::-webkit-scrollbar-button{
-  height: 1.5%;
-  background-color: black;
 }
 
 @keyframes carrossel_change {
@@ -384,23 +552,23 @@ span {
 
 @keyframes textBlur {
   0% {
-    text-shadow: 0 0 15px #7000FF;
+    text-shadow: 0 0 30px #7000FF;
   }
 
   25% {
-    text-shadow: 0 0 15px #b907b9;
+    text-shadow: 0 0 0px #b907b9;
   }
 
   50% {
-    text-shadow: 0 0 15px #00a2ff;
+    text-shadow: 0 0 30px #00a2ff;
   }
 
   75% {
-    text-shadow: 0 0 15px #ff0062;
+    text-shadow: 0 0 0px #ff0062;
   }
 
   100% {
-    text-shadow: 0 0 15px #7000FF;
+    text-shadow: 0 0 30px #7000FF;
   }
 
 }

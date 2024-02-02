@@ -1,4 +1,4 @@
-const images = [
+const images_carrossel = [
 
   {
     "tec": 'HTML',
@@ -20,4 +20,4 @@ const images = [
 
 ]
 
-export {images};
+export {images_carrossel};

@@ -1,13 +1,14 @@
-import { images } from "./images.js";
+import { images_carrossel } from "./images_data.js";
 
 var count = 1
 const img = document.querySelector('.carrossel img');
 const btn_back = document.querySelector('#back');
 const btn_next = document.querySelector('#next');
+const btn_menu = document.querySelector('.btn_contacts_menu');
 
- var src = images.find((element) => element.position == count);
+var src = images_carrossel.find((element) => element.position == count);
 
-      img.src = src.link;
+img.src = src.link;
 
 function change_image_next() {
 
@@ -19,7 +20,7 @@ function change_image_next() {
 
     if (count <= 3) {
 
-      var src = images.find((element) => element.position == count);
+      var src = images_carrossel.find((element) => element.position == count);
 
       img.src = src.link;
 
@@ -27,7 +28,7 @@ function change_image_next() {
 
       count = 1
 
-      var src = images.find((element) => element.position == count);
+      var src = images_carrossel.find((element) => element.position == count);
 
       img.src = src.link;
     }
@@ -49,7 +50,7 @@ function change_image_back() {
 
     if (count > 0) {
 
-      var src = images.find((element) => element.position == count);
+      var src = images_carrossel.find((element) => element.position == count);
 
       img.src = src.link;
 
@@ -57,7 +58,7 @@ function change_image_back() {
 
       count = 3
 
-      var src = images.find((element) => element.position == count);
+      var src = images_carrossel.find((element) => element.position == count);
 
       img.src = src.link;
     }
@@ -69,4 +70,22 @@ function change_image_back() {
 }
 
 btn_back.addEventListener('click', change_image_back);
+
+function menu() {
+
+  const menu = document.querySelector('.contacts_menu');
+
+  if (menu.style.display == 'flex') {
+
+    menu.style.display = 'none';
+
+  } else { menu.style.display = 'flex'; }
+
+
+
+}
+
+btn_menu.addEventListener('click', menu);
+
+
 
