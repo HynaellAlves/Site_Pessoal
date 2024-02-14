@@ -16,8 +16,8 @@
   <br>
   
   ## Detalhes:
-  Tudo foi desenvolvido sem utilização de framework algum de nenhum tipo. Somente foram utilizadas a codificação pura de HTML5, CSS3 e JavaScript.
-O intuito desse projeto, é para agrupar todas as minhas informações, pessoais e profissionais em um lugar só, contendo informações academicas, experiencias, projetos e formas de contato para facilitar a compreenção a qualquer pessoa.
+  Tudo foi desenvolvido sem utilização de framework algum de nenhum tipo. Somente foram utilizadas as codificações puras de HTML5, CSS3 e JavaScript.
+O intuito desse projeto é, agrupar todas as minhas informações, pessoais e profissionais em um lugar só, contendo informações academicas, experiencias, projetos e formas de contato para facilitar a compreenção a qualquer pessoa.
 <br>
 ### Agradeço por estar aqui ! 😁
 </div>
