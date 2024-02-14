@@ -1,8 +1,12 @@
+/* Importações de fonte */
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Reset inicial da página */
 
 * {
   padding: 0;
@@ -10,148 +14,174 @@
   box-sizing: border-box;
 }
 
+/* Definindo tamanho padrão de fonte */
+
 html {
   font-size: 12px;
 }
 
+/* Definindo o corpo da página para ocupar o tamanho da tela */
+
 body {
-  overflow: hidden;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   background: url('./Archives/backgrounds/index_background.png');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* Página do site */
+
 
 .page {
   position: relative;
-  overflow-x: hidden;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+/* Área do banner de início */
+
 .contacts {
+  position: absolute;
   display: flex;
+  width: 18%;
+  height: 80%;
   flex-direction: column;
   justify-content: start;
   align-items: end;
-  position: absolute;
   padding: 1% 1%;
-  width: 19%;
-  height: 80%;
   right: 0;
   z-index: 1;
 }
 
+/* Botão que abre o menu */
+
 .btn_contacts_menu {
-  width: 18%;
-  height: 8%;
+  width: 40px;
+  height: 39px;
   transition: 0.5s;
-  box-shadow: 0 0 15px #9f39f3;
   border: none;
   border-radius: 50%;
-  background: url('./Archives/elements_small/profile_menu_contacts.png');
-  background-size: cover;
+  box-shadow: 0 0 15px #9f39f3;
   cursor: pointer;
+  background-color: #0e0e0e;
 }
+
+.btn_contacts_menu img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Efeito de passar o cursor */
 
 .btn_contacts_menu:hover {
   box-shadow: 0 0 30px #ffff;
 }
 
+/* Menu de contatos */
+
 .contacts_menu {
   display: none;
-  flex-direction: column;
-  justify-content: space-evenly;
   width: 100%;
   height: 60%;
+  flex-direction: column;
+  justify-content: space-evenly;
   border-radius: 10px;
   background-color: #140329;
 }
 
-.contacts_title {
+/* Ítens do menu */
+
+.contacts_menu_title {
   color: white;
-  text-align: center;
   font-size: 2.8rem;
   font-weight: bolder;
   font-family: "Open Sans", sans-serif;
-
+  text-align: center;
 }
 
-.links {
+.contacts_menu_links {
   display: flex;
-  align-items: center;
-  flex-direction: column;
   width: 100%;
   height: 60%;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contacts_links {
   color: #c25bfd;
   font-size: 1rem;
-  margin: 3.4% 0;
   font-family: "Open Sans", sans-serif;
+  margin: 3.4% 0;
 }
 
 .contacts_label {
   color: white;
   font-size: 1rem;
   font-family: "Rubik", sans-serif;
-
 }
+
+/* Ícones de midias sociais */
 
 .social_medias {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   width: 100%;
   height: 15%;
-
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.icons_socialMedias {
+.icons_social_medias {
   width: 14%;
   height: 66%;
 }
 
-.icons_socialMedias img {
+.icons_social_medias img {
   width: 100%;
   height: 100%;
 }
 
+/* Banner inicial do site */
+
 .banner {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   height: 80%;
+  flex-wrap: wrap;
+  border-radius: 0 0 20px 20px;
   background-image: url('./Archives/backgrounds/Primary_Banner.gif');
   background-size: cover;
   background-color: black;
   margin-bottom: 5%;
-  border-radius: 0 0 20px 20px;
 }
+
+/* Elemento de efeito escuro no fundo do banner */
 
 .bloom {
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 0 0 20px 20px;
   background-color: black;
   opacity: 0.9;
   z-index: 0;
-  border-radius: 0 0 20px 20px;
 }
+
+/* Barra de navegação do site no banner */
 
 .banner_nav {
   position: relative;
+  display: flex;
   width: 100%;
   height: 12%;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
@@ -169,9 +199,12 @@ body {
   font-weight: bolder;
 }
 
+/* Efeito de passar o cursor nas opções da barra de navegação */
+
 .link:hover {
   text-shadow: -5px -10px 4px #9f39f3;
 }
+
 
 .information_content {
   position: relative;
@@ -185,14 +218,15 @@ body {
 .informations {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   width: 60%;
   height: 70%;
 }
 
 .profile_image {
   display: flex;
-  width: 40%;
-  height: 100%;
+  width: 316px;
+  height: 305px;
   border-radius: 50%;
   box-shadow: 0 0 100px #ffffff59;
 }
@@ -215,7 +249,7 @@ body {
   align-content: center;
   justify-content: center;
   width: 60%;
-  height: 100%;
+  height: 60%;
   line-height: 1.6;
 }
 
@@ -241,6 +275,7 @@ body {
 }
 
 .contents {
+  overflow: hidden;
   display: flex;
   width: 100%;
   height: 100%;
@@ -258,6 +293,10 @@ body {
   align-items: center;
   width: 100%;
   height: 20%;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: "Rubik", sans-serif;
 }
 
 .text_introduction {
@@ -267,13 +306,6 @@ body {
   width: 95%;
   height: 80%;
   font-family: "Open Sans", sans-serif;
-}
-
-.title_introduction p {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: bolder;
-  font-family: "Rubik", sans-serif;
 }
 
 .saudacao {
@@ -292,7 +324,9 @@ span {
 }
 
 .content_FA_OP {
-  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .FA {
@@ -317,7 +351,7 @@ span {
   align-items: center;
   justify-content: center;
   width: 55%;
-  height: 75%;
+  height: 90%;
   padding: 5% 1.3%;
   font-family: "Open Sans", sans-serif;
 }
@@ -347,7 +381,6 @@ span {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 5% 0;
 }
 
 .cards {
@@ -355,15 +388,14 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 23%;
-  height: 45%;
-  margin: 1% 3%;
+  width: 30%;
+  height: 48%;
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
 .enterprises_img {
-  width: 50%;
+  width: 40%;
   height: 30%;
   margin: 0 0 2% 0;
   border-radius: 30px;
@@ -386,9 +418,9 @@ span {
 }
 
 .text_function_enterprise {
+  width: 80%;
   font-size: 1.1rem;
 }
-
 
 .carrossel {
   position: relative;
@@ -407,7 +439,6 @@ span {
   width: 30%;
   padding: 0 2%;
   background-color: black;
-  border-right: 20px solid #fff;
 }
 
 .text_carrossel p {
@@ -426,13 +457,13 @@ span {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 6.7%;
+  height: 41px;
   bottom: 0;
 }
 
 .btn_carrossel {
-  width: 3.3%;
-  height: 100%;
+  width: 43px;
+  height: 41px;
   border-radius: 50%;
   border: none;
   margin: 0 1%;
@@ -440,14 +471,10 @@ span {
   cursor: pointer;
 }
 
-#next {
-  background: url('./Archives/elements_small/next_button.png');
-  background-size: contain;
-}
-
-#back {
-  background: url('./Archives/elements_small/back_button.png');
-  background-size: contain;
+.btn_carrossel img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .carrossel_change_0 {
@@ -472,7 +499,7 @@ footer {
   background-color: #0e0e0e;
 }
 
-.associations_links{
+.associations_links {
   display: flex;
   flex-direction: column;
   width: 15%;
@@ -481,7 +508,6 @@ footer {
   color: white;
   font-size: 1.2rem;
   font-family: "Rubik", sans-serif;
-
 }
 
 .associations_links ul {
@@ -496,7 +522,7 @@ footer {
   text-decoration: none;
 }
 
-.associations_links ul a:hover{
+.associations_links ul a:hover {
   color: white;
 }
 
@@ -513,16 +539,16 @@ footer p {
 .icons_teste {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   width: 30%;
-  height: 30%;
+  height: 20%;
   padding: 0 2%;
 }
 
 .footer_svg {
-  width: 7%;
-  height: 30%;
+  width: 23px;
+  height: 21px;
   margin: 0 3%;
 }
 
@@ -531,6 +557,8 @@ footer p {
   height: 100%;
 }
 
+/* Barra de rolagem vertical do site */
+
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -538,6 +566,8 @@ footer p {
 ::-webkit-scrollbar-thumb {
   background-color: #9f39f3;
 }
+
+/* Animações e efeitos do site */
 
 @keyframes carrossel_change {
   from {
@@ -570,5 +600,4 @@ footer p {
   100% {
     text-shadow: 0 0 30px #7000FF;
   }
-
 }

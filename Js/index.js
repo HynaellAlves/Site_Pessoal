@@ -1,4 +1,5 @@
 import { images_carrossel } from "./images_data.js";
+import resizer from './resizer.js'
 
 var count = 1
 const img = document.querySelector('.carrossel img');
@@ -86,6 +87,9 @@ function menu() {
 }
 
 btn_menu.addEventListener('click', menu);
+
+
+window.addEventListener('resize', resizer)
 
 
 

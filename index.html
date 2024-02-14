@@ -2,53 +2,107 @@
 <html lang="pt-br">
 
 <head>
+
+  <!-- Identificação da cadeia de caracteres -->
+
   <meta charset="UTF-8">
+
+  <!-- Escala da janela de acordo com o dispositivo -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#7000FF">
+
+  <!-- Arquivos de estilo e personalização -->
 
   <link rel="stylesheet" href="./Style/index.css">
+  <link rel="stylesheet" href="./Style/breakpoints.css">
   <link rel="icon" type="image/png" sizes="16x16" href="./Style/Archives/elements_small/favicon.png">
 
-  <title>Site Pessoal</title>
+  <!-- Nome da guia do site -->
+
+  <title>Dark Purple</title>
+
 </head>
 
 <body>
+
+  <!-- Div principal da página que engloba todos os elementos dentro do body (representa a página) -->
+
   <div class="page">
+
+    <!-- Div para o menu de contexto dos contatos no canto da tela | Foi adotado um posicionamento absoluto a frente do banner -->
+
     <div class="contacts">
-      <button class="btn_contacts_menu"></button>
+
+      <!-- Botão / Ícone que abre o menu de contexto -->
+
+      <button class="btn_contacts_menu"> <img src="./Style/Archives/elements_small/profile_menu_contacts.png" alt=""></button>
+
+      <!-- Menu de contexto -->
+
       <div class="contacts_menu">
-        <label class="contacts_title" for="contacts_menu">Contatos</label>
-        <div class="links">
-          <p class="contacts_links"><span class="contacts_label">Email:</span> hynaell@gmail.com</p>
+
+        <!-- Ítens do menu de contexto -->
+
+        <label class="contacts_menu_title">Contatos</label>
+
+        <div class="contacts_menu_links">
           <p class="contacts_links"><span class="contacts_label">Whatsapp:</span> (71) 98953-0628</p>
+          <p class="contacts_links"><span class="contacts_label">Email:</span> hynaell@gmail.com</p>
           <p class="contacts_links"><span class="contacts_label">Instagram:</span> @hynaell_alves</p>
           <p class="contacts_links"><span class="contacts_label">GitHub:</span> github.com/HynaellAlves</p>
           <p class="contacts_links"><span class="contacts_label">Linkedin:</span> Example.com/HynaellAlves</p>
         </div>
+
+        <!-- Ícones no final do menu de contexto -->
+
         <div class="social_medias">
-          <div class="icons_socialMedias"><img src="./Style/Archives/elements_small/gmail.png" alt=""></div>
-          <div class="icons_socialMedias"><img src="./Style/Archives/elements_small/whatsapp.png" alt=""></div>
-          <div class="icons_socialMedias"><img src="./Style/Archives/elements_small/instagram.png" alt=""></div>
-          <div class="icons_socialMedias"><img src="./Style/Archives/elements_small/placa-do-github.png" alt=""></div>
-          <div class="icons_socialMedias"><img src="./Style/Archives/elements_small/linkedin.png" alt=""></div>
+          <div class="icons_social_medias"><img src="./Style/Archives/elements_small/gmail.png" alt=""></div>
+          <div class="icons_social_medias"><img src="./Style/Archives/elements_small/whatsapp.png" alt=""></div>
+          <div class="icons_social_medias"><img src="./Style/Archives/elements_small/instagram.png" alt=""></div>
+          <div class="icons_social_medias"><img src="./Style/Archives/elements_small/placa-do-github.png" alt=""></div>
+          <div class="icons_social_medias"><img src="./Style/Archives/elements_small/linkedin.png" alt=""></div>
         </div>
       </div>
     </div>
+
+    <!-- Banner no começo da página onde se encontram as informações básicas -->
+
     <div class="banner">
+
+      <!-- Elemento posicionado aa frente do background do banner para dar o efeito escurecido do fundo | Foi adotado o posicionamento absoluto a frente do fundo e atrás dos ítens do banner -->
+
       <div class="bloom"></div>
+
+      <!-- Barra de navegação onde se encontram os links das principais áreas do site -->
+
       <header class="banner_nav">
         <p class="banner_link_nav"><a class="link" href="#formation">Formação</a></p>
         <p class="banner_link_nav"><a class="link" href="#">Visão Geral</a></p>
         <p class="banner_link_nav"><a class="link" href="#experience">Experiências</a></p>
       </header>
+
+      <!-- Div que engloba os ítens abaixo da barra de navegação no banner -->
       <div class="information_content">
+
+        <!-- Content dos ítens centralizados do banner onde se encontram as informações básicas -->
+
         <div class="informations">
+
+          <!-- Content que comporta a imagem pessoal no banner -->
+
           <div class="profile_image">
+
+            <!-- Div que delimita a imagem -->
+
             <div class="image">
               <img src="./Style/Archives/Perfil_SitePessoal.png" alt="">
             </div>
           </div>
+
+          <!-- Content que comporta as informações básicas descritas no banner -->
+
           <div class="profile_data">
             <p class="name">Hynaell Alves</p>
             <p class="cargo">Desenvolvedor Full-Stack Júnior</p>
@@ -58,7 +112,12 @@
       </div>
     </div>
 
+    <!-- Content da área de resumo pessoal -->
+
     <div class="contents content_introduction">
+
+      <!-- Título do content e resumo pessoal -->
+
       <div class="title_introduction">
         <p>um pouco sobre mim</p>
       </div>
@@ -77,9 +136,21 @@
         </p>
       </div>
     </div>
+
+    <!-- Content da área de formação e objetivo profissional -->
+
     <div id="formation" class="contents content_FA_OP">
+
+      <!-- Lado da formação academica -->
+
       <div class="FA">
+
+        <!-- Card da formação academica -->
+
         <div class="card">
+
+          <!-- Ítens do card -->
+
           <div class="icon"><img src="./Style/Archives/icons/Education.svg" alt=""></div>
 
           <p class="title_FA_OP">Formação Acadêmica</p>
@@ -92,10 +163,18 @@
             estruturas
           </p>
         </div>
-
       </div>
+
+      <!-- Lado do objetivo profissional -->
+
       <div class="OP">
+
+        <!-- Card do objetivo profissional -->
+
         <div class="card">
+
+          <!-- Ítens do card -->
+
           <div class="icon"><img src="./Style/Archives/icons/Target.svg" alt=""></div>
           <p class="title_FA_OP">Objetivo Profissional</p>
           <br>
@@ -108,15 +187,21 @@
         </div>
       </div>
     </div>
+
+    <!-- Content da área de experiencias profissionais -->
+
     <div id="experience" class="contents content_Experience">
+
+      <!-- Cards e Ítens das experiencias profissionais -->
+
       <div class="cards">
         <div class="enterprises_img"><img src="./Style/Archives/Construtora_bsm.jpg" alt=""></div>
         <p class="title_enterprise">Construtora CBSM</p>
         <p class="enterprises_cargo">Efetivo: Almoxarife</p>
         <p class="text_function_enterprise">Atuei como Almoxarife da empresa realizando liberação de materiais,
-          lançamento de notas fiscais, controle de estoque, liberação de pedidos de materiais, solicitações de pedidos,
-          entre outras funções de controle da empresa.</p>
+          lançamento de notas fiscais, controle de estoque, liberação de pedidos, solicitações de pedidos e funções de controle da empresa.</p>
       </div>
+
       <div class="cards">
         <div class="enterprises_img"><img src="./Style/Archives/Santa_helena.png" alt=""></div>
         <p class="title_enterprise">Construtora Santa Helena</p>
@@ -125,6 +210,7 @@
           controle de estoque, verificação de mercadorias, e armazenagem
         </p>
       </div>
+
       <div class="cards">
         <div class="enterprises_img"><img src="./Style/Archives/Stella_maris.jpg" alt=""></div>
         <p class="title_enterprise">Stella Maris Premium</p>
@@ -133,6 +219,7 @@
           atividades de vários setores em conjunto.
         </p>
       </div>
+
       <div class="cards">
         <div class="enterprises_img"><img src="./Style/Archives/Bravo_burger.png" alt=""></div>
         <p class="title_enterprise">Bravo Burger</p>
@@ -140,6 +227,7 @@
         <p class="text_function_enterprise">Atuei como auxiliar na produção da empresa, fazendo recebimento, separação,
           organização e inspeção de qualidade das mercadorias.</p>
       </div>
+
       <div class="cards">
         <div class="enterprises_img"><img src="./Style/Archives/Bravo_burger.png" alt=""></div>
         <p class="title_enterprise">Bravo Burger</p>
@@ -149,6 +237,7 @@
           ao ramo da empresa como lançamento de notas
         </p>
       </div>
+
       <div class="cards">
         <div class="enterprises_img"><img src="./Style/Archives/Atakadao_atakarejo.jpg" alt=""></div>
         <p class="title_enterprise">Atakadão Atakarejo</p>
@@ -159,24 +248,50 @@
       </div>
     </div>
 
+    <!-- Content da área do carrossel -->
+
     <div class="contents content_carrossel">
+
+      <!-- Carrossel de tecnologias utilizadas (Banners) -->
+
       <div class="carrossel">
+
+        <!-- Texto do carrossel -->
+
         <div class="text_carrossel">
           <p>
             Tudo foi criado utilizando as seguintes tecnologias
           </p>
         </div>
+
+        <!-- Tag que recebe os banners do carrossel -->
+
         <img src="">
+
+        <!-- Botões do carrossel -->
+
         <div class="nav_Buttons">
-          <button onclick="" id="back" class="btn_carrossel"></button>
-          <button onclick="" id="next" class=" btn_carrossel"></button>
+          <button onclick="" id="back" class="btn_carrossel"><img src="./Style/Archives/elements_small/back_button.png" alt=""></button>
+          <button onclick="" id="next" class=" btn_carrossel"><img src="./Style/Archives/elements_small/next_button.png" alt=""></button>
         </div>
 
       </div>
     </div>
+
+    <!-- Rodapé do site -->
+
     <footer>
+
+      <!-- Content de links associados ao site -->
+
       <div class="associations">
+
+        <!-- Uma espécie de card dos links utilizados no desenvolvimento -->
+
         <div class="associations_links">
+
+          <!-- Título e links associados -->
+
           <h4>Links de páginas</h4>
           <br>
           <ul>
@@ -189,7 +304,13 @@
             <a href="https://www.websiteplanet.com/pt-br/">Website Planet</a>
           </ul>
         </div>
+
+        <!-- Uma espécie de card dos links das documentações utilizadas no desenvolvimento -->
+
         <div class="associations_links">
+
+          <!-- Título e Links das documentações -->
+
           <h4>Documentações</h4>
           <br>
           <ul>
@@ -197,7 +318,13 @@
             <a href="https://developer.mozilla.org/pt-BR/docs/Web">MDN Web Docs</a>
           </ul>
         </div>
+
+        <!-- Uma espécie de card dos links de implementação do site -->
+
         <div class="associations_links">
+
+          <!-- Título e links de implementação -->
+
           <h4>Implementação</h4>
           <br>
           <ul>
@@ -207,32 +334,49 @@
           </ul>
         </div>
       </div>
+
+      <!-- Identificação de direitos autorais do site -->
+
       <p>©2024 | Hynaell Alves - Desenvolvido para promoção e divulgação a caráter profissional.</p>
+
+      <!-- Agrupamento do ícones das redes sociais no canto do rodapé -->
+
       <div class="icons_teste">
+
+        <!-- Ícones com os links para as redes sociais -->
 
         <div class="footer_svg">
           <a href="https://www.instagram.com/hynaell_alves/"> <img
               src="./Style/Archives/icons/instagram-svgrepo-com.svg" alt="Instagram"></a>
         </div>
+
         <div class="footer_svg">
           <a href="https://linkedin.com/in/hynaell-alves"><img src="./Style/Archives/icons/linkedin-161-svgrepo-com.svg"
               alt="Linkedin"></a>
         </div>
+
         <div class="footer_svg">
           <a href="https://github.com/HynaellAlves"> <img src="./Style/Archives/icons/github-svgrepo-com.svg"
               alt="GitHub"></a>
         </div>
+
         <div class="footer_svg">
           <a href="https://api.whatsapp.com/send?phone=5571989530628&text=Prazer%20!%20encontrei%20seu%20link"><img
               src="./Style/Archives/icons/whatsapp-svgrepo-com.svg" alt="Whatsapp"></a>
         </div>
+
         <div class="footer_svg">
           <img src="./Style/Archives/icons/gmail-svgrepo-com.svg" alt="Gmail">
         </div>
+
       </div>
     </footer>
+
   </div>
 </body>
+
+<!-- Script módulo principal do site -->
+
 <script type="module" src="./Js/index.js"></script>
 
 </html>
